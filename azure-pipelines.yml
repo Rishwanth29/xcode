@@ -1,0 +1,3 @@
+# https://docs.microsoft.com/azure/devops/pipelines/languages/xcode
+pool:
+  vmImage: 'macOS-10.13'
