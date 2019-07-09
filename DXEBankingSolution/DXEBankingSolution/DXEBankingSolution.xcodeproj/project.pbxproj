@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0416083921464FA300BD3C4C /* DXCSearchCriteriaContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0416083821464FA300BD3C4C /* DXCSearchCriteriaContainerViewController.m */; };
+		0416087621466E2C00BD3C4C /* AIExpert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0416087421466E0F00BD3C4C /* AIExpert.framework */; };
+		0416087721466E2C00BD3C4C /* AIExpert.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0416087421466E0F00BD3C4C /* AIExpert.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		121756451F7E9A7300F2669B /* DXCSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 121756431F7E98DB00F2669B /* DXCSearchResultsViewController.m */; };
+		121756481F7EB19900F2669B /* DXCSearchCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 121756471F7EB19900F2669B /* DXCSearchCellTableViewCell.m */; };
+		121756541F7EC1DD00F2669B /* DXCPopupOverlayAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 121756501F7EC1D900F2669B /* DXCPopupOverlayAnimatedTransitioning.m */; };
+		121756551F7EC1E000F2669B /* DXCPopupOverlayPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 121756511F7EC1D900F2669B /* DXCPopupOverlayPresentationController.m */; };
+		1218D38F1F8E88120058A844 /* DXCSearchCriteriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B17D261F8E7C47005D4047 /* DXCSearchCriteriaViewController.m */; };
+		122769661F90FA7C00B09E70 /* DXCSmartContractCancellation.m in Sources */ = {isa = PBXBuildFile; fileRef = 122769641F90FA2F00B09E70 /* DXCSmartContractCancellation.m */; };
+		1239DB1B1F794344006528D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1239DB1A1F794344006528D2 /* AppDelegate.m */; };
+		1239DB1E1F794344006528D2 /* DXCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1239DB1D1F794344006528D2 /* DXCLoginViewController.m */; };
+		1239DB211F794344006528D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1239DB1F1F794344006528D2 /* Main.storyboard */; };
+		1239DB231F794344006528D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1239DB221F794344006528D2 /* Assets.xcassets */; };
+		1239DB261F794344006528D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1239DB241F794344006528D2 /* LaunchScreen.storyboard */; };
+		1239DB291F794344006528D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1239DB281F794344006528D2 /* main.m */; };
+		1253D5E71F7A5759000A64F3 /* UIColor+HexToRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 1253D5E61F7A5732000A64F3 /* UIColor+HexToRGB.m */; };
+		125BFB991F7FC4C900E02D70 /* DXCNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 125BFB981F7FC4C900E02D70 /* DXCNavigationViewController.m */; };
+		125BFB9C1F7FE8BF00E02D70 /* DXCLogoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 125BFB9B1F7FE8BF00E02D70 /* DXCLogoutViewController.m */; };
+		125BFB9F1F7FE8E100E02D70 /* DXCHomeConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 125BFB9E1F7FE8E100E02D70 /* DXCHomeConfirmationViewController.m */; };
+		125D5FAE1F7AC07100E99F97 /* DXCWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 125D5FAD1F7AC07100E99F97 /* DXCWelcomeViewController.m */; };
+		125D5FB11F7AC16D00E99F97 /* DXCRightWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 125D5FB01F7AC16D00E99F97 /* DXCRightWelcomeViewController.m */; };
+		125D5FB41F7AC73800E99F97 /* DXCSearchPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 125D5FB31F7AC73800E99F97 /* DXCSearchPropertyViewController.m */; };
+		12610B2A1F87F5B4000CAC8B /* DXCFinanceBankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 12610B291F87F5B4000CAC8B /* DXCFinanceBankCell.m */; };
+		12610B301F88900F000CAC8B /* DXCApprovalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12610B2F1F88900F000CAC8B /* DXCApprovalViewController.m */; };
+		12610B331F8893FE000CAC8B /* DXCAuctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12610B321F8893FE000CAC8B /* DXCAuctionViewController.m */; };
+		127E4D531F81381100D96A2E /* DXCFinanceCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 127E4D521F81381100D96A2E /* DXCFinanceCollectionViewController.m */; };
+		128466BF1F8CA319002E7E4D /* DXCSettlementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128466BE1F8CA319002E7E4D /* DXCSettlementViewController.m */; };
+		1285BD631F9785A5007D37CF /* DXCErrorPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1285BD621F9785A5007D37CF /* DXCErrorPopupViewController.m */; };
+		1299EA4E1F7F4F9D00861CB7 /* DXC3DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1299EA4D1F7F4F9D00861CB7 /* DXC3DViewController.m */; };
+		1299EA511F7F5C0800861CB7 /* DXCFinanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1299EA501F7F5C0800861CB7 /* DXCFinanceViewController.m */; };
+		12C9F34B1F8A1512005D8770 /* DXCAuctionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C9F34A1F8A1512005D8770 /* DXCAuctionTableViewController.m */; };
+		12E6A9B81F7A0C1800A8ADEB /* DXCRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E6A9B71F7A078F00A8ADEB /* DXCRoundButton.m */; };
+		12F135DB1F7B61F800EA22CF /* DXCCollapsableTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F135D91F7B61EB00EA22CF /* DXCCollapsableTableView.m */; };
+		12F135DE1F7B641400EA22CF /* DXCLeftWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F135DD1F7B641400EA22CF /* DXCLeftWelcomeViewController.m */; };
+		12F135E31F7B6F5F00EA22CF /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12F135E21F7B6F5900EA22CF /* HeaderView.xib */; };
+		12FF901A1F7BA62800E8EAC5 /* DXCProfileImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 125D5FB61F7ACACF00E99F97 /* DXCProfileImageView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0416087821466E2C00BD3C4C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0416087721466E2C00BD3C4C /* AIExpert.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0416083721464FA300BD3C4C /* DXCSearchCriteriaContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCSearchCriteriaContainerViewController.h; sourceTree = "<group>"; };
+		0416083821464FA300BD3C4C /* DXCSearchCriteriaContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCSearchCriteriaContainerViewController.m; sourceTree = "<group>"; };
+		0416087421466E0F00BD3C4C /* AIExpert.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AIExpert.framework; path = DXEBankingSolution/AIExpert.framework; sourceTree = "<group>"; };
+		121756431F7E98DB00F2669B /* DXCSearchResultsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCSearchResultsViewController.m; sourceTree = "<group>"; };
+		121756441F7E98DB00F2669B /* DXCSearchResultsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCSearchResultsViewController.h; sourceTree = "<group>"; };
+		121756461F7EB19900F2669B /* DXCSearchCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCSearchCellTableViewCell.h; sourceTree = "<group>"; };
+		121756471F7EB19900F2669B /* DXCSearchCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCSearchCellTableViewCell.m; sourceTree = "<group>"; };
+		121756501F7EC1D900F2669B /* DXCPopupOverlayAnimatedTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCPopupOverlayAnimatedTransitioning.m; sourceTree = "<group>"; };
+		121756511F7EC1D900F2669B /* DXCPopupOverlayPresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCPopupOverlayPresentationController.m; sourceTree = "<group>"; };
+		121756521F7EC1D900F2669B /* DXCPopupOverlayAnimatedTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCPopupOverlayAnimatedTransitioning.h; sourceTree = "<group>"; };
+		121756531F7EC1D900F2669B /* DXCPopupOverlayPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCPopupOverlayPresentationController.h; sourceTree = "<group>"; };
+		122769641F90FA2F00B09E70 /* DXCSmartContractCancellation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCSmartContractCancellation.m; sourceTree = "<group>"; };
+		122769651F90FA2F00B09E70 /* DXCSmartContractCancellation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCSmartContractCancellation.h; sourceTree = "<group>"; };
+		1239DB161F794344006528D2 /* DXCBankingSolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DXCBankingSolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1239DB191F794344006528D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1239DB1A1F794344006528D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1239DB1C1F794344006528D2 /* DXCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCLoginViewController.h; sourceTree = "<group>"; };
+		1239DB1D1F794344006528D2 /* DXCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCLoginViewController.m; sourceTree = "<group>"; };
+		1239DB201F794344006528D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1239DB221F794344006528D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1239DB251F794344006528D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1239DB271F794344006528D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1239DB281F794344006528D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1253D5E51F7A5732000A64F3 /* UIColor+HexToRGB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIColor+HexToRGB.h"; path = "DXEBankingSolution/Utilities/UIColor+HexToRGB.h"; sourceTree = SOURCE_ROOT; };
+		1253D5E61F7A5732000A64F3 /* UIColor+HexToRGB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexToRGB.m"; path = "DXEBankingSolution/Utilities/UIColor+HexToRGB.m"; sourceTree = SOURCE_ROOT; };
+		125BFB971F7FC4C900E02D70 /* DXCNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCNavigationViewController.h; sourceTree = "<group>"; };
+		125BFB981F7FC4C900E02D70 /* DXCNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCNavigationViewController.m; sourceTree = "<group>"; };
+		125BFB9A1F7FE8BF00E02D70 /* DXCLogoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCLogoutViewController.h; sourceTree = "<group>"; };
+		125BFB9B1F7FE8BF00E02D70 /* DXCLogoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCLogoutViewController.m; sourceTree = "<group>"; };
+		125BFB9D1F7FE8E100E02D70 /* DXCHomeConfirmationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCHomeConfirmationViewController.h; sourceTree = "<group>"; };
+		125BFB9E1F7FE8E100E02D70 /* DXCHomeConfirmationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCHomeConfirmationViewController.m; sourceTree = "<group>"; };
+		125D5FAC1F7AC07100E99F97 /* DXCWelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCWelcomeViewController.h; sourceTree = "<group>"; };
+		125D5FAD1F7AC07100E99F97 /* DXCWelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCWelcomeViewController.m; sourceTree = "<group>"; };
+		125D5FAF1F7AC16D00E99F97 /* DXCRightWelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCRightWelcomeViewController.h; sourceTree = "<group>"; };
+		125D5FB01F7AC16D00E99F97 /* DXCRightWelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCRightWelcomeViewController.m; sourceTree = "<group>"; };
+		125D5FB21F7AC73800E99F97 /* DXCSearchPropertyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCSearchPropertyViewController.h; sourceTree = "<group>"; };
+		125D5FB31F7AC73800E99F97 /* DXCSearchPropertyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCSearchPropertyViewController.m; sourceTree = "<group>"; };
+		125D5FB51F7ACACF00E99F97 /* DXCProfileImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCProfileImageView.h; sourceTree = "<group>"; };
+		125D5FB61F7ACACF00E99F97 /* DXCProfileImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCProfileImageView.m; sourceTree = "<group>"; };
+		12610B281F87F5B4000CAC8B /* DXCFinanceBankCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCFinanceBankCell.h; sourceTree = "<group>"; };
+		12610B291F87F5B4000CAC8B /* DXCFinanceBankCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCFinanceBankCell.m; sourceTree = "<group>"; };
+		12610B2E1F88900F000CAC8B /* DXCApprovalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCApprovalViewController.h; sourceTree = "<group>"; };
+		12610B2F1F88900F000CAC8B /* DXCApprovalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCApprovalViewController.m; sourceTree = "<group>"; };
+		12610B311F8893FE000CAC8B /* DXCAuctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCAuctionViewController.h; sourceTree = "<group>"; };
+		12610B321F8893FE000CAC8B /* DXCAuctionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCAuctionViewController.m; sourceTree = "<group>"; };
+		127E4D511F81381100D96A2E /* DXCFinanceCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCFinanceCollectionViewController.h; sourceTree = "<group>"; };
+		127E4D521F81381100D96A2E /* DXCFinanceCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCFinanceCollectionViewController.m; sourceTree = "<group>"; };
+		128466BD1F8CA319002E7E4D /* DXCSettlementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXCSettlementViewController.h; sourceTree = "<group>"; };
+		128466BE1F8CA319002E7E4D /* DXCSettlementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXCSettlementViewController.m; sourceTree = "<group>"; };
+		1285BD611F9785A5007D37CF /* DXCErrorPopupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCErrorPopupViewController.h; sourceTree = "<group>"; };
+		1285BD621F9785A5007D37CF /* DXCErrorPopupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCErrorPopupViewController.m; sourceTree = "<group>"; };
+		1299EA4C1F7F4F9D00861CB7 /* DXC3DViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXC3DViewController.h; sourceTree = "<group>"; };
+		1299EA4D1F7F4F9D00861CB7 /* DXC3DViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXC3DViewController.m; sourceTree = "<group>"; };
+		1299EA4F1F7F5C0800861CB7 /* DXCFinanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCFinanceViewController.h; sourceTree = "<group>"; };
+		1299EA501F7F5C0800861CB7 /* DXCFinanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCFinanceViewController.m; sourceTree = "<group>"; };
+		12B17D261F8E7C47005D4047 /* DXCSearchCriteriaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCSearchCriteriaViewController.m; sourceTree = "<group>"; };
+		12B17D271F8E7C47005D4047 /* DXCSearchCriteriaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCSearchCriteriaViewController.h; sourceTree = "<group>"; };
+		12C9F3491F8A1512005D8770 /* DXCAuctionTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCAuctionTableViewController.h; sourceTree = "<group>"; };
+		12C9F34A1F8A1512005D8770 /* DXCAuctionTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCAuctionTableViewController.m; sourceTree = "<group>"; };
+		12E6A9B61F7A078F00A8ADEB /* DXCRoundButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DXCRoundButton.h; path = DXEBankingSolution/Utilities/DXCRoundButton.h; sourceTree = SOURCE_ROOT; };
+		12E6A9B71F7A078F00A8ADEB /* DXCRoundButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DXCRoundButton.m; path = DXEBankingSolution/Utilities/DXCRoundButton.m; sourceTree = SOURCE_ROOT; };
+		12F135D91F7B61EB00EA22CF /* DXCCollapsableTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DXCCollapsableTableView.m; path = DXEBankingSolution/Utilities/DXCCollapsableTableView.m; sourceTree = SOURCE_ROOT; };
+		12F135DA1F7B61EB00EA22CF /* DXCCollapsableTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DXCCollapsableTableView.h; path = DXEBankingSolution/Utilities/DXCCollapsableTableView.h; sourceTree = SOURCE_ROOT; };
+		12F135DC1F7B641400EA22CF /* DXCLeftWelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXCLeftWelcomeViewController.h; sourceTree = "<group>"; };
+		12F135DD1F7B641400EA22CF /* DXCLeftWelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXCLeftWelcomeViewController.m; sourceTree = "<group>"; };
+		12F135E21F7B6F5900EA22CF /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1239DB131F794344006528D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0416087621466E2C00BD3C4C /* AIExpert.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0416087321466E0F00BD3C4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0416087421466E0F00BD3C4C /* AIExpert.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		121756491F7EC1AF00F2669B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				121756521F7EC1D900F2669B /* DXCPopupOverlayAnimatedTransitioning.h */,
+				121756501F7EC1D900F2669B /* DXCPopupOverlayAnimatedTransitioning.m */,
+				121756531F7EC1D900F2669B /* DXCPopupOverlayPresentationController.h */,
+				121756511F7EC1D900F2669B /* DXCPopupOverlayPresentationController.m */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		1239DB0D1F794344006528D2 = {
+			isa = PBXGroup;
+			children = (
+				1239DB181F794344006528D2 /* DXEBankingSolution */,
+				1239DB171F794344006528D2 /* Products */,
+				0416087321466E0F00BD3C4C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1239DB171F794344006528D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1239DB161F794344006528D2 /* DXCBankingSolution.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1239DB181F794344006528D2 /* DXEBankingSolution */ = {
+			isa = PBXGroup;
+			children = (
+				122769651F90FA2F00B09E70 /* DXCSmartContractCancellation.h */,
+				122769641F90FA2F00B09E70 /* DXCSmartContractCancellation.m */,
+				12B17D271F8E7C47005D4047 /* DXCSearchCriteriaViewController.h */,
+				12B17D261F8E7C47005D4047 /* DXCSearchCriteriaViewController.m */,
+				121756491F7EC1AF00F2669B /* Presentation */,
+				121756441F7E98DB00F2669B /* DXCSearchResultsViewController.h */,
+				121756431F7E98DB00F2669B /* DXCSearchResultsViewController.m */,
+				12F135E21F7B6F5900EA22CF /* HeaderView.xib */,
+				125D5FB51F7ACACF00E99F97 /* DXCProfileImageView.h */,
+				125D5FB61F7ACACF00E99F97 /* DXCProfileImageView.m */,
+				12E6A9B51F7A078300A8ADEB /* Utilities */,
+				1239DB191F794344006528D2 /* AppDelegate.h */,
+				1239DB1A1F794344006528D2 /* AppDelegate.m */,
+				1239DB1C1F794344006528D2 /* DXCLoginViewController.h */,
+				1239DB1D1F794344006528D2 /* DXCLoginViewController.m */,
+				1239DB1F1F794344006528D2 /* Main.storyboard */,
+				1239DB221F794344006528D2 /* Assets.xcassets */,
+				1239DB241F794344006528D2 /* LaunchScreen.storyboard */,
+				1239DB271F794344006528D2 /* Info.plist */,
+				1239DB281F794344006528D2 /* main.m */,
+				125D5FAC1F7AC07100E99F97 /* DXCWelcomeViewController.h */,
+				125D5FAD1F7AC07100E99F97 /* DXCWelcomeViewController.m */,
+				125D5FAF1F7AC16D00E99F97 /* DXCRightWelcomeViewController.h */,
+				125D5FB01F7AC16D00E99F97 /* DXCRightWelcomeViewController.m */,
+				125D5FB21F7AC73800E99F97 /* DXCSearchPropertyViewController.h */,
+				125D5FB31F7AC73800E99F97 /* DXCSearchPropertyViewController.m */,
+				12F135DC1F7B641400EA22CF /* DXCLeftWelcomeViewController.h */,
+				12F135DD1F7B641400EA22CF /* DXCLeftWelcomeViewController.m */,
+				121756461F7EB19900F2669B /* DXCSearchCellTableViewCell.h */,
+				121756471F7EB19900F2669B /* DXCSearchCellTableViewCell.m */,
+				1299EA4C1F7F4F9D00861CB7 /* DXC3DViewController.h */,
+				1299EA4D1F7F4F9D00861CB7 /* DXC3DViewController.m */,
+				1299EA4F1F7F5C0800861CB7 /* DXCFinanceViewController.h */,
+				1299EA501F7F5C0800861CB7 /* DXCFinanceViewController.m */,
+				125BFB971F7FC4C900E02D70 /* DXCNavigationViewController.h */,
+				125BFB981F7FC4C900E02D70 /* DXCNavigationViewController.m */,
+				125BFB9A1F7FE8BF00E02D70 /* DXCLogoutViewController.h */,
+				125BFB9B1F7FE8BF00E02D70 /* DXCLogoutViewController.m */,
+				125BFB9D1F7FE8E100E02D70 /* DXCHomeConfirmationViewController.h */,
+				125BFB9E1F7FE8E100E02D70 /* DXCHomeConfirmationViewController.m */,
+				127E4D511F81381100D96A2E /* DXCFinanceCollectionViewController.h */,
+				127E4D521F81381100D96A2E /* DXCFinanceCollectionViewController.m */,
+				12610B281F87F5B4000CAC8B /* DXCFinanceBankCell.h */,
+				12610B291F87F5B4000CAC8B /* DXCFinanceBankCell.m */,
+				12610B2E1F88900F000CAC8B /* DXCApprovalViewController.h */,
+				12610B2F1F88900F000CAC8B /* DXCApprovalViewController.m */,
+				12610B311F8893FE000CAC8B /* DXCAuctionViewController.h */,
+				12610B321F8893FE000CAC8B /* DXCAuctionViewController.m */,
+				12C9F3491F8A1512005D8770 /* DXCAuctionTableViewController.h */,
+				12C9F34A1F8A1512005D8770 /* DXCAuctionTableViewController.m */,
+				128466BD1F8CA319002E7E4D /* DXCSettlementViewController.h */,
+				128466BE1F8CA319002E7E4D /* DXCSettlementViewController.m */,
+				1285BD611F9785A5007D37CF /* DXCErrorPopupViewController.h */,
+				1285BD621F9785A5007D37CF /* DXCErrorPopupViewController.m */,
+				0416083721464FA300BD3C4C /* DXCSearchCriteriaContainerViewController.h */,
+				0416083821464FA300BD3C4C /* DXCSearchCriteriaContainerViewController.m */,
+			);
+			path = DXEBankingSolution;
+			sourceTree = "<group>";
+		};
+		12E6A9B51F7A078300A8ADEB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				12F135DA1F7B61EB00EA22CF /* DXCCollapsableTableView.h */,
+				12F135D91F7B61EB00EA22CF /* DXCCollapsableTableView.m */,
+				1253D5E51F7A5732000A64F3 /* UIColor+HexToRGB.h */,
+				1253D5E61F7A5732000A64F3 /* UIColor+HexToRGB.m */,
+				12E6A9B61F7A078F00A8ADEB /* DXCRoundButton.h */,
+				12E6A9B71F7A078F00A8ADEB /* DXCRoundButton.m */,
+			);
+			name = Utilities;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1239DB151F794344006528D2 /* DXEBankingSolution */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1239DB2C1F794344006528D2 /* Build configuration list for PBXNativeTarget "DXEBankingSolution" */;
+			buildPhases = (
+				1239DB121F794344006528D2 /* Sources */,
+				1239DB131F794344006528D2 /* Frameworks */,
+				1239DB141F794344006528D2 /* Resources */,
+				0416087821466E2C00BD3C4C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DXEBankingSolution;
+			productName = DXEBankingSolution;
+			productReference = 1239DB161F794344006528D2 /* DXCBankingSolution.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1239DB0E1F794344006528D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Mphasis;
+				TargetAttributes = {
+					1239DB151F794344006528D2 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 1239DB111F794344006528D2 /* Build configuration list for PBXProject "DXEBankingSolution" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1239DB0D1F794344006528D2;
+			productRefGroup = 1239DB171F794344006528D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1239DB151F794344006528D2 /* DXEBankingSolution */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1239DB141F794344006528D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1239DB261F794344006528D2 /* LaunchScreen.storyboard in Resources */,
+				1239DB231F794344006528D2 /* Assets.xcassets in Resources */,
+				1239DB211F794344006528D2 /* Main.storyboard in Resources */,
+				12F135E31F7B6F5F00EA22CF /* HeaderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1239DB121F794344006528D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				122769661F90FA7C00B09E70 /* DXCSmartContractCancellation.m in Sources */,
+				12610B331F8893FE000CAC8B /* DXCAuctionViewController.m in Sources */,
+				125D5FB11F7AC16D00E99F97 /* DXCRightWelcomeViewController.m in Sources */,
+				12C9F34B1F8A1512005D8770 /* DXCAuctionTableViewController.m in Sources */,
+				12610B2A1F87F5B4000CAC8B /* DXCFinanceBankCell.m in Sources */,
+				121756551F7EC1E000F2669B /* DXCPopupOverlayPresentationController.m in Sources */,
+				0416083921464FA300BD3C4C /* DXCSearchCriteriaContainerViewController.m in Sources */,
+				121756541F7EC1DD00F2669B /* DXCPopupOverlayAnimatedTransitioning.m in Sources */,
+				12FF901A1F7BA62800E8EAC5 /* DXCProfileImageView.m in Sources */,
+				1299EA4E1F7F4F9D00861CB7 /* DXC3DViewController.m in Sources */,
+				1239DB1E1F794344006528D2 /* DXCLoginViewController.m in Sources */,
+				12F135DE1F7B641400EA22CF /* DXCLeftWelcomeViewController.m in Sources */,
+				12F135DB1F7B61F800EA22CF /* DXCCollapsableTableView.m in Sources */,
+				125D5FAE1F7AC07100E99F97 /* DXCWelcomeViewController.m in Sources */,
+				1218D38F1F8E88120058A844 /* DXCSearchCriteriaViewController.m in Sources */,
+				1253D5E71F7A5759000A64F3 /* UIColor+HexToRGB.m in Sources */,
+				127E4D531F81381100D96A2E /* DXCFinanceCollectionViewController.m in Sources */,
+				125BFB9F1F7FE8E100E02D70 /* DXCHomeConfirmationViewController.m in Sources */,
+				1285BD631F9785A5007D37CF /* DXCErrorPopupViewController.m in Sources */,
+				1239DB291F794344006528D2 /* main.m in Sources */,
+				128466BF1F8CA319002E7E4D /* DXCSettlementViewController.m in Sources */,
+				125BFB9C1F7FE8BF00E02D70 /* DXCLogoutViewController.m in Sources */,
+				125BFB991F7FC4C900E02D70 /* DXCNavigationViewController.m in Sources */,
+				12610B301F88900F000CAC8B /* DXCApprovalViewController.m in Sources */,
+				12E6A9B81F7A0C1800A8ADEB /* DXCRoundButton.m in Sources */,
+				1239DB1B1F794344006528D2 /* AppDelegate.m in Sources */,
+				121756481F7EB19900F2669B /* DXCSearchCellTableViewCell.m in Sources */,
+				1299EA511F7F5C0800861CB7 /* DXCFinanceViewController.m in Sources */,
+				125D5FB41F7AC73800E99F97 /* DXCSearchPropertyViewController.m in Sources */,
+				121756451F7E9A7300F2669B /* DXCSearchResultsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1239DB1F1F794344006528D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1239DB201F794344006528D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1239DB241F794344006528D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1239DB251F794344006528D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1239DB2A1F794344006528D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1239DB2B1F794344006528D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1239DB2D1F794344006528D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_NOTICES = NO;
+				ASSETCATALOG_WARNINGS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: MphasiS Limited";
+				CODE_SIGN_STYLE = Manual;
+				DEPLOYMENT_LOCATION = NO;
+				DEVELOPMENT_TEAM = 527XE45ZDW;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DXEBankingSolution",
+				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				IBC_NOTICES = NO;
+				IBC_WARNINGS = NO;
+				IBSC_NOTICES = NO;
+				IBSC_OTHER_FLAGS = "";
+				IBSC_WARNINGS = NO;
+				INFOPLIST_FILE = DXEBankingSolution/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DXEBankingSolution",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mphasis.internal.DXCBankingSolution;
+				PRODUCT_NAME = DXCBankingSolution;
+				PROVISIONING_PROFILE = "bd283439-1989-4d59-988d-5695729bb40d";
+				PROVISIONING_PROFILE_SPECIFIER = MphasisInternalGenericDistribution;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = 2;
+				WARNING_CFLAGS = "";
+				WARNING_LDFLAGS = "";
+			};
+			name = Debug;
+		};
+		1239DB2E1F794344006528D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_NOTICES = NO;
+				ASSETCATALOG_WARNINGS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: MphasiS Limited";
+				CODE_SIGN_STYLE = Manual;
+				DEPLOYMENT_LOCATION = NO;
+				DEVELOPMENT_TEAM = 527XE45ZDW;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DXEBankingSolution",
+				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				IBC_NOTICES = NO;
+				IBC_WARNINGS = NO;
+				IBSC_NOTICES = NO;
+				IBSC_OTHER_FLAGS = "";
+				IBSC_WARNINGS = NO;
+				INFOPLIST_FILE = DXEBankingSolution/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DXEBankingSolution",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mphasis.internal.DXCBankingSolution;
+				PRODUCT_NAME = DXCBankingSolution;
+				PROVISIONING_PROFILE = "bd283439-1989-4d59-988d-5695729bb40d";
+				PROVISIONING_PROFILE_SPECIFIER = MphasisInternalGenericDistribution;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = 2;
+				WARNING_CFLAGS = "";
+				WARNING_LDFLAGS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1239DB111F794344006528D2 /* Build configuration list for PBXProject "DXEBankingSolution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1239DB2A1F794344006528D2 /* Debug */,
+				1239DB2B1F794344006528D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1239DB2C1F794344006528D2 /* Build configuration list for PBXNativeTarget "DXEBankingSolution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1239DB2D1F794344006528D2 /* Debug */,
+				1239DB2E1F794344006528D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1239DB0E1F794344006528D2 /* Project object */;
+}
