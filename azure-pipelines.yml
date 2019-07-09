@@ -2,7 +2,7 @@
 pool:
   vmImage: 'macOS-10.13'
 variables:
-  scheme: ''
+  scheme: 'xcode'
   sdk: 'iphoneos'
   configuration: 'Release'
 
